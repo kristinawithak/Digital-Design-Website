@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  font-family: "roboto";
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+li,
+a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 5%;
+}
+
+.left {
+  display: flex;
+  line-height: 50pt;
+  width: 10%;
+  text-align: right;
+}
+
+nav {
+  position: fixed; /* becaused we always want it at the top */
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  color: #897bb7;
+}
+
+.nav__links {
+  text-transform: uppercase;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 5px 5px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+  color: skyblue;
+}
+
+.main-title {
+  padding-top: 10%;
+  display: flex;
+  color: white;
+  position: relative;
+  font-size: 10vw;
+  width: 20%;
+  text-align: right;
+  padding-left: 5%;
+}
+
+.contact-text {
+  margin: auto;
+  color: white;
+  font-size: 3vw;
+  overflow: hidden;
+  padding: 15vw 10%;
+}
+
+/* WOrk section */
+.slider {
+  padding-top: ;
+  overflow: hidden;
+  padding-bottom: 10%;
+}
+
+.flex {
+  padding-top: 5vh;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.slider-wrapper div {
+  position: relative;
+}
+.slider-wrapper {
+  margin-top: 5vw;
+  margin-left: 5vw;
+}
+/* .slide-image {
+  height: 24vw;
+} */
+
+.slide-image img {
+  width: 54vw;
+  cursor: pointer;
+}
+.slide-content {
+  width: 25vw;
+  color: #fff;
+  padding: 3vw 9vw 3vw 9vw;
+}
+.slide-date {
+  color: #0a8acb;
+  font-size: 1.1vw;
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+  padding-bottom: 1.4vw;
+}
+.slide-title {
+  font-size: 4vw;
+  font-weight: 600;
+  letter-spacing: 0.1vw;
+  line-height: 3.55vw;
+  padding-bottom: 5.8vw;
+}
+.slide-text {
+  display: none;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  opacity: 0.8;
+  padding-bottom: 4vw;
+}
+.slide-more {
+  font-family: "gotham";
+  font-weight: 700;
+  letter-spacing: 0.1vw;
+  text-align: center;
+  float: center;
+  font-size: 4.5vw;
+  background-color: #897bb7;
+  line-height: 38px;
+  height: 20px;
+}
+.slide-bullet {
+  width: 0.5vw;
+  height: 0.5vw;
+  background-color: #0b8bcc;
+  border-radius: 200%;
+  position: relative;
+  margin-left: 1.2vw;
+}
+.slide-nav {
+  margin-left: 64vw;
+  margin-top: -5.5vw;
+}
+
+div.overlay-blue {
+  width: 100%;
+  height: 75%;
+  position: absolute;
+  top: 0;
+  transition: 0.5s ease all;
+}
+div.overlay-blue:hover {
+  background-color: rgba(13, 27, 43, 0.5);
+}
+
+.arrows {
+  width: 11.5vw;
+  margin-top: -5.8vw;
+  margin-left: 72vw;
+  position: relative;
+}
+.arrow {
+  display: inline-block;
+  position: absolute;
+  width: 4.2vw;
+  height: 4.2vw;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 0.15vw solid #fff;
+  border-left: 0.15vw solid #fff;
+  transition: all 0.1s ease-in-out;
+  text-decoration: none;
+  color: transparent;
+}
+.arrow:hover {
+  border-color: #0a8acb;
+  border-width: 0.25vw;
+}
+.arrow:before {
+  display: block;
+  height: 200%;
+  width: 200%;
+  margin-left: -50%;
+  margin-top: -50%;
+  content: "";
+  transform: rotate(45deg);
+}
+.arrow.prev {
+  transform: rotate(-45deg);
+  left: 0;
+}
+.arrow.next {
+  transform: rotate(135deg);
+  right: 0;
+}
+
+/* Email */
+
+.bottom-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 5%;
+}
+
+.cta {
+  font-size: 11pt;
+  color: #fff;
+}
+
+/*Social Links */
+.social {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.social__links {
+  text-transform: uppercase;
+}
+
+.social__links li {
+  display: inline-block;
+  padding: 5px 5px;
+}
+
+.social__links li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 8pt;
+  transition: all 0.3s ease 0s;
+}
+.social__links li a:hover {
+  color: skyblue;
+}
+
+@media only screen and (min-width: 600px) {
+  li,
+  a {
+    font-size: 13px;
+  }
+
+  .main-title {
+    font-size: 8vw;
+  }
+  .slide-image img {
+    width: 450px;
+  }
+  .slide-title {
+    font-size: 20pt;
+  }
+  .arrows {
+    width: 11.5vw;
+    margin-top: -60pt;
+    margin-left: 72vw;
+    position: relative;
+  }
+  .arrow {
+    display: inline-block;
+    position: absolute;
+    width: 3.6vw;
+    height: 3.6vw;
+    background: transparent;
+    text-indent: -9999px;
+    border-top: 0.15vw solid #fff;
+    border-left: 0.15vw solid #fff;
+    transition: all 0.1s ease-in-out;
+    text-decoration: none;
+    color: transparent;
+  }
+  .slide-content {
+    position: relative;
+    width: 10vw;
+    color: #fff;
+    padding: 3vw 204px 3vw 6vw;
+  }
+  .flex {
+    padding-right: 45px;
+  }
+
+  .cta {
+    font-size: 13pt;
+  }
+  .social__links li a {
+    font-size: 10pt;
+  }
+  .slide-title {
+    font-size: 3.8vw;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+    line-height: 4.55vw;
+    padding-bottom: 5.8vw;
+  }
+
+  .slide-more {
+    font-family: "gotham";
+    font-weight: 500;
+    letter-spacing: 0.1vw;
+    text-align: center;
+    float: center;
+    font-size: 4.5vw;
+    line-height: 38px;
+    height: 20px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .main-title {
+    font-size: 6vw;
+    text-align: left;
+    width: 550px;
+  }
+  .slide-more {
+    font-size: 2.5vw;
+    line-height: 38px;
+    height: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 52pt;
+    text-align: left;
+    width: 850px;
+  }
+  .slide-image img {
+    max-width: 450px;
+    height: auto;
+    cursor: pointer;
+  }
+  .slide-date {
+    color: #0a8acb;
+    font-size: 0.8vw;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    padding-bottom: 1.4vw;
+  }
+  .slide-title {
+    font-size: 2.5vw;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+    line-height: 3vw;
+    padding-bottom: 1.8vw;
+  }
+  .slide-text {
+    font-size: 1vw;
+    line-height: 1.3vw;
+    opacity: 0.8;
+    padding-bottom: 4vw;
+  }
+  .slide-more {
+    font-size: 1.8vw;
+  }
+  .arrows {
+    width: 9.5vw;
+    margin-top: -55px;
+    margin-left: 92px;
+    position: relative;
+  }
+  .arrow {
+    display: inline-block;
+    position: absolute;
+    width: 1.2vw;
+    height: 1.2vw;
+    background: transparent;
+    text-indent: -9999px;
+    border-top: 0.15vw solid #fff;
+    border-left: 0.15vw solid #fff;
+    transition: all 0.1s ease-in-out;
+    text-decoration: none;
+    color: transparent;
+  }
+}
